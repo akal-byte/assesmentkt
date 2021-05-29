@@ -15,9 +15,6 @@ fun main() {
     savings.withdraw(3450.89)
 
 }
-//A book is represented by a data class with these attributes: Title, Author and
-//pages. Write a function that takes in a list of books and returns them arranged
-//by title in reverse alphabetical order
 data class Book(var title:String,var author:String,var pages:Int)
  fun arrangeBooks(books:List<Book>):List<Book>{
      var arrangedBooks=books.sortedBy { book -> book.title }
